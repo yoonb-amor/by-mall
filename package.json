@@ -1,0 +1,68 @@
+{
+  "name": "vue-app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "dev+": "node --max_old_space_size=4096 node_modules/@vue/cli-service/bin/vue-cli-service.js serve",
+    "build": "vue-cli-service build",
+    "deploy": "node deploy.sh.js",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "dateformat": "^3.0.3",
+    "element-ui": "^2.7.2",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.debounce": "^4.0.8",
+    "lodash.flatten": "^4.4.0",
+    "lodash.get": "^4.4.2",
+    "lodash.set": "^4.3.2",
+    "normalize.css": "^8.0.1",
+    "qs": "^6.7.0",
+    "vue": "^2.6.10",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "babel-eslint": "^10.0.1",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "fs-extra": "^7.0.1",
+    "get-port": "^5.1.1",
+    "husky": "^4.2.5",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

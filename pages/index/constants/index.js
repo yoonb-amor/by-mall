@@ -1,0 +1,1 @@
+export const NAV_DATA = [{ label: '平台名称' }, { label: '功能名称' }, { label: '模块名称' }];
